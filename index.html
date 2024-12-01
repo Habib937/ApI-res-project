@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peddy Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/7ee369b1ec.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+     <nav class="hidden md:flex justify-between items-center py-6 px-10">
+        <div class="flex items-center">
+            <img src="image/logo.webp" alt="peddy logo" class="w-8 h-8">
+            <span class="ml-2 text-xl font-bold hover:bg-teal-600">Peddy</span>
+        </div>
+        <div class="space-x-8">
+            <a href="#" class="text-gray-600 hover:text-black hover:bg-blue-600">Home</a>
+            <a href="#" class="text-gray-600 hover:text-black hover:bg-blue-600">Shop</a>
+            <a href="#" class="text-gray-600 hover:text-black hover:bg-blue-600">Contact</a>
+        </div>
+        <div>
+            <button class="p-2 border rounded-full focus:outline-none">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 10a5 5 0 100-10 5 5 0 000 10zm0 3a7 7 0 00-7 7v1h14v-1a7 7 0 00-7-7z"></path>
+                </svg>
+            </button>
+        </div>
+        </nav>
+        <section class="text-center py-10">
+            <h2 class="text-red-600">Bringing Families Together ❤️</h2>
+            <h1 class="text-4xl md:text-5xl font-bold mt-4">Your Path to Adoption Starts Here</h1>
+            <p class="mt-7 max-w-md mx-auto text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <a href="#target"><button class="mt-6 bg-green-500 text-white py-2 px-6 rounded-full hover:bg-teal-600">View More</button></a>
+    
+           
+            <div class="mt-10">
+                <img src="image/pet.webp" alt="" class="mx-auto rounded">
+            </div>
+    
+            <div id="target">
+                <h1 class="text-4xl md:text-5xl font-bold mt-10">Adopt  Your  Best Friend</h1>
+                <p class="mt-7 max-w-md mx-auto text-gray-600">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using filler text is that it has a</p>
+    
+            </div>
+          
+        </section>
+        <main>
+            
+    <nav id="categories">
+
+    </nav>
+
+    <div class="flex justify-between border boder-5  bg-gray-50">
+        <div class="">
+          
+          <h2 class="btn btn-ghost text-xl font-bold">Best Deal For you</h2>
+        </div>
+        
+        <div class="">
+          <a id="sort-price" class="btn bg-[#0E7A81] hover:bg-teal-600">Sort by Price</a>
+        </div>
+      </div>
+   
+    <div class="container mx-auto py-10">
+   
+        <div id="spinner">
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-5 ">
+           
+            <div id="card" class="lg:col-span-4 grid grid-cols-1 md:grid-cols-3 gap-6 bg-white p-4 rounded-lg border border-3">
+
+                
+            </div>
+           
+            <div id="pic" class="lg:col-span-1 grid grid-cols-2 gap-3 bg-white p-4 rounded-lg border overflow-hidden">
+                
+               
+            </div>
+        </div>
+
+   
+            <button class="btn hidden" onclick="my_modal_1.showModal()">open modal</button>
+            <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+
+                <div id="modalContent">
+
+                </div>
+                
+                <div class="modal-action">
+                <form method="dialog">
+                    
+                    <button class="btn">Close</button>
+                </form>
+                </div>
+            </div>
+            </dialog>
+    </div>
+        </main>
+        <footer class="bg-black text-white py-10 rounded">
+            <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-6">
+              <div class="">
+                <h2 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                  <span><img src="image/logo.webp" alt="Peddy Logo" class="w-6 h-6"></span> Peddy
+                </h2>
+                <p class="text-gray-400 hover:text-white">Location: av. Washington 165, NY CA 54003</p>
+                <p class="text-gray-400 hover:text-white">Phone: +31 85 964 47 25</p>
+                <p class="text-gray-400 hover:text-white">Email: abdshakaet@gmail.com</p>
+                <p class="text-gray-400 hover:text-white">Opening hours: 9:00 AM - 5:00 PM</p>
+                <div class="flex space-x-3 mt-4">
+                  <a href="#" class="text-xl text-blue-600"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="text-xl"><i class="fab fa-x-twitter"></i></a>
+                  <a href="#" class="text-xl text-red-600"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="text-xl text-orange-800"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+              <div class="">
+                <h3 class="text-lg font-bold mb-4">Useful Links</h3>
+                <ul>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Animals</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Foundation</a></li>
+                  <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                </ul>
+              </div>
+              <div class="">
+                <h3 class="text-lg font-bold mb-4">Drop a Message</h3>
+                <form>
+                  <input type="email" placeholder="Enter your email" class="w-full p-2 mb-3 text-gray-900 bg-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400">
+                  <button class="w-full bg-teal-500 text-white p-2 rounded-lg hover:bg-teal-600">Subscribe</button>
+                </form>
+              </div>
+          
+            </div>
+          </footer>
+   <script src="js/index.js"></script>
+</body>
+</html>
